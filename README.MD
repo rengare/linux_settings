@@ -8,3 +8,5 @@
 * https://github.com/rengare/comfortable-swipe
 ## noise cancelation
 * https://wiki.archlinux.org/index.php/PulseAudio/Troubleshooting#Enable_Echo/Noise-Cancellation
+## fan control
+* https://wiki.archlinux.org/index.php/Fan_speed_control#Installation_2
