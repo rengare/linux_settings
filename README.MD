@@ -9,4 +9,5 @@
 ## noise cancelation
 * https://wiki.archlinux.org/index.php/PulseAudio/Troubleshooting#Enable_Echo/Noise-Cancellation
 ## fan control
+* https://github.com/gilbsgilbs/dell-bios-fan-control-git
 * https://wiki.archlinux.org/index.php/Fan_speed_control#Installation_2
