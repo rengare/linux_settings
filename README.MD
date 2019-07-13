@@ -11,3 +11,5 @@
 ## fan control
 * https://github.com/gilbsgilbs/dell-bios-fan-control-git
 * https://wiki.archlinux.org/index.php/Fan_speed_control#Installation_2
+## intel screen tearing
+* https://www.reddit.com/r/pop_os/comments/b118me/switching_to_nvidia_mode_is_broken_when_adding/
