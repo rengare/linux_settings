@@ -1,6 +1,7 @@
 ## Dragon fly black to loud
 * https://chrisjean.com/fix-for-usb-audio-is-too-loud-and-mutes-at-low-volume-in-ubuntu/
 * set only ```volume = ignore```
+* volume change amixer -D pulse sset Master 5%+
 ## mapping a media keys
 * https://askubuntu.com/a/997276
 * using xdotool
