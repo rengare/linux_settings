@@ -18,6 +18,7 @@
 ## pop os tilix theme
 * https://github.com/Toyonut/tilix_pop_os_theme
 
-## oh-my-zsh
+## . files
 * ```sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
 * ```git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions```
+* ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
