@@ -23,3 +23,7 @@
 * ```git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions```
 * ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
 * https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert
+
+## firefox
+* enable gfx.webrender.all && gfx.webrender.enabled
+
