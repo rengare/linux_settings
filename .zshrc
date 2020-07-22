@@ -1,126 +1,31 @@
 stty start undef
 stty stop undef
 setopt noflowcontrol
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
- export PATH=$HOME/.local/bin:$PATH
- export PATH=$HOME/.yarn/bin:$PATH
+ 
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.yarn/bin:$PATH
+export PATH="$PATH:$HOME/workspace/flutter/bin"
 
- export ANDROID_HOME=/home/ren/Android/Sdk
- export PATH=$HOME/Android/Sdk/platform-tools:$PATH
+source /etc/profile.d/vte.sh
 
- export DOTNET_ROOT=$HOME/dotnet
- export PATH=$PATH:$HOME/dotnet
-
-# Path to your oh-my-zsh installation.
- export ZSH="/home/ren/.oh-my-zsh"
+export ZSH="/home/ren/.oh-my-zsh"
 
 . ~/programs/z.sh
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="arrow"
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
   zsh-autosuggestions
   npm
   cargo
-rustup
+	rustup
 )
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-  # Set Spaceship ZSH as a prompt
-#  autoload -U promptinit; promptinit
-#  prompt spaceship
-
 
 alias s="git status"
 alias b="git branch"
@@ -128,34 +33,34 @@ alias a="git add $1"
 alias c="git commit $1"
 alias push="git push $1"
 alias p="git pull"
-
+alias g="git log --all --decorate --oneline --graph"
 alias s.="nautilus ."
 
 alias debug="google-chrome --remote-debugging-port=9222"
-
-export ASPNETCORE_ENVIRONMENT="development"
 
 alias nvidia="system76-power graphics nvidia"
 alias intel="system76-power graphics intel"
 
 alias music="cmus"
 
-alias lss="exa $1"
+alias ls="exa $1"
 
 alias count="ls -1 | wc -l"
 
-alias rg="rg"
-
-alias fsize="du -sh $1"
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /home/ren/.nvm/versions/node/v10.15.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/ren/.nvm/versions/node/v10.15.0/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-
+alias open="xdg-open $1"
+alias fan="sudo /home/ren/workspace/dell-bios-fan-control/dell.sh"
 alias quiet="sudo i8kfan 0 0"
 alias mid="sudo i8kfan 1 1"
 alias high="sudo i8kfan 2 2"
-source /etc/profile.d/vte.sh
-alias micloopback="sudo pactl load-module module-loopback latency_msec=1"
-alias micunload="sudo pactl unload-module module-loopback"
 
+
+alias stream_chat="firefox https://dashboard.twitch.tv/popout/u/rengaret/stream-manager/chat"
+alias stream_manager="firefox https://dashboard.twitch.tv/u/rengaret/stream-manager"
+alias fan_bios="sudo /home/ren/workspace/dell-bios-fan-control/dell-bios-fan-control 0"
+
+alias ps="procs"
+alias cat="bat"
+alias grep="rg"
+alias space="du -sh $1"
+alias mac="/home/ren/workspace/macOS-Simple-KVM/basic.sh"
+alias f="hunter $1"

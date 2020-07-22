@@ -1,8 +1,11 @@
+filetype plugin indent on
 syntax on
 
 set runtimepath+=~/.vim
 set runtimepath+=~/.vim/bundle/ctrlp.vim
-
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set mouse=a
 set number
 set autoread
@@ -12,7 +15,7 @@ au CursorHold * checktime
 call plug#begin('~/.vim/plugged')
   Plug 'rust-lang/rust.vim'
   Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-
+	Plug 'tpope/vim-commentary'
 call plug#end()
  
 let g:coc_force_debug = 1
@@ -52,6 +55,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> J :call CocAction('showSignatureHelp')<CR>
 
+nnoremap <C-D> <C-S-D>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -61,6 +65,7 @@ nnoremap <silent> <A-h> :tabp<CR>
 nnoremap <silent> <C-s> :w<CR>
 nnoremap <silent> <A-n> :tabnew<CR>
 nnoremap <silent> <A-q> :q<CR>
+nnoremap <silent> <A-e> :Texplore<CR>
 
 hi CocFloating guibg=Normal guifg=#83a598
 autocmd StdinReadPre * let s:std_in=1
