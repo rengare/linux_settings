@@ -27,3 +27,11 @@
 ## firefox
 * enable gfx.webrender.all && gfx.webrender.enabled
 
+## slow boot
+* sudo systemctl disable NetworkManager-wait-online.service
+* sudo systemctl mask NetworkManager-wait-online.service
+* sudo systemctl disable docker.service
+* sudo systemctl disable apt-daily.service
+* sudo systemctl disable apt-daily.timer
+* sudo systemctl disable apt-daily-upgrade.timer
+* sudo systemctl disable apt-daily-upgrade.service
