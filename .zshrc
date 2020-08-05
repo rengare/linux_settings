@@ -1,7 +1,6 @@
 stty start undef
 stty stop undef
 setopt noflowcontrol
- 
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.yarn/bin:$PATH
 export PATH="$PATH:$HOME/workspace/flutter/bin"

@@ -14,7 +14,7 @@ au CursorHold * checktime
 
 call plug#begin('~/.vim/plugged')
   Plug 'rust-lang/rust.vim'
-  Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+  Plug 'neoclide/coc.nvim'
 	Plug 'tpope/vim-commentary'
 call plug#end()
  
