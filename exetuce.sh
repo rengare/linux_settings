@@ -1,4 +1,4 @@
-sudo apt install tilix tlp chrome-gnome-shell lm-sensors git gnome-tweak-tool zsh -y
+sudo apt install tilix tlp chrome-gnome-shell lm-sensors git gnome-tweak-tool zsh neovim -y
 sudo apt update && sudo apt upgrade -y
 
 cp -rf * ~/
