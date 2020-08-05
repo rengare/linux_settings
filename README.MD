@@ -18,11 +18,9 @@
 ## pop os tilix theme
 * https://github.com/Toyonut/tilix_pop_os_theme
 
-## . files
-* ```sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
-* ```git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions```
-* ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
-* https://software.opensuse.org/download.html?project=home:manuelschneid3r&package=albert
+## Installation
+* clone repository or download zip (unzip ofc :))
+* chmod +x exetuce.sh && ./exetuce.sh
 
 ## firefox
 * enable gfx.webrender.all && gfx.webrender.enabled
