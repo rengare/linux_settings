@@ -41,25 +41,22 @@ alias nvidia="system76-power graphics nvidia"
 alias intel="system76-power graphics intel"
 
 alias music="cmus"
-
-alias ls="exa $1"
-
-alias count="ls -1 | wc -l"
-
 alias open="xdg-open $1"
 alias fan="sudo /home/ren/workspace/dell-bios-fan-control/dell.sh"
 alias quiet="sudo i8kfan 0 0"
 alias mid="sudo i8kfan 1 1"
 alias high="sudo i8kfan 2 2"
 
-
 alias stream_chat="firefox https://dashboard.twitch.tv/popout/u/rengaret/stream-manager/chat"
 alias stream_manager="firefox https://dashboard.twitch.tv/u/rengaret/stream-manager"
 alias fan_bios="sudo /home/ren/workspace/dell-bios-fan-control/dell-bios-fan-control 0"
 
+#alias ls="exa $1"
 #alias ps="procs"
 #alias cat="bat"
 #alias grep="rg"
 #alias space="du -sh $1"
 #alias mac="/home/ren/workspace/macOS-Simple-KVM/basic.sh"
 #alias f="hunter $1"
+
+alias count="ls -1 | wc -l"

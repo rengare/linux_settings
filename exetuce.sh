@@ -17,6 +17,9 @@ gsettings set org.gnome.desktop.wm.preferences button-layout close,minimize,maxi
 
 gsettings set org.gnome.desktop.interface clock-format '24h'
 
+#curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#cargo install procs bat ripgrep hunter exa
+
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 bash -c  "$(wget -qO- https://git.io/vQgMr)"
