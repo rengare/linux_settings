@@ -9,6 +9,8 @@ wget https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20
 
 sudo dpkg -i albert_* 
 
+sudo apt --fix-broken install 
+
 gsettings set org.gnome.desktop.wm.preferences button-layout close,minimize,maximize:appmenu
 
 gsettings set org.gnome.desktop.interface clock-format '24h'
