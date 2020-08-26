@@ -5,6 +5,9 @@
 ## mapping a media keys
 * https://askubuntu.com/a/997276
 * using xdotool
+* xdotool key --clearmodifiers XF86AudioPlay
+* xdotool key --clearmodifiers XF86AudioNext
+* xdotool key --clearmodifiers XF86AudioPrev
 ## swipe gestures using xdotool
 * https://github.com/rengare/comfortable-swipe
 ## noise cancelation
