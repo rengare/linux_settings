@@ -24,7 +24,7 @@
 ## Installation
 * clone repository or download zip (unzip ofc :))
 * chmod +x exetuce.sh && ./exetuce.sh
-
+* sudo apt install paprefs pulseaudio-module-raop #airplay cast
 ## firefox
 * enable gfx.webrender.all && gfx.webrender.enabled
 
