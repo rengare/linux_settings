@@ -2,4 +2,5 @@ systemctl disable NetworkManager-wait-online.service
 systemctl mask NetworkManager-wait-online.service
 /home/ren/workspace/dell-bios-fan-control/dell-bios-fan-control 0
 i8kctl fan 0 0
+powertop --auto-tune
 dconf write /org/gnome/desktop/notifications/show-banners false
