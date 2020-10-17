@@ -42,3 +42,6 @@
 * sudo systemctl disable apt-daily.timer
 * sudo systemctl disable apt-daily-upgrade.timer
 * sudo systemctl disable apt-daily-upgrade.service
+
+## gdm3 touchpad tap
+https://unix.stackexchange.com/questions/266586/gdm-how-to-enable-touchpad-tap-to-click#266590
