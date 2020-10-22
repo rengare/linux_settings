@@ -4,6 +4,7 @@ setopt noflowcontrol
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.yarn/bin:$PATH
 export PATH="$PATH:$HOME/workspace/flutter/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 source /etc/profile.d/vte.sh
 
@@ -51,12 +52,13 @@ alias stream_chat="firefox https://dashboard.twitch.tv/popout/u/rengaret/stream-
 alias stream_manager="firefox https://dashboard.twitch.tv/u/rengaret/stream-manager"
 alias fan_bios="sudo /home/ren/workspace/dell-bios-fan-control/dell-bios-fan-control 0"
 
-#alias ls="exa $1"
-#alias ps="procs"
-#alias cat="bat"
-#alias grep="rg"
-#alias space="du -sh $1"
+alias ls="exa $1"
+alias ps="procs"
+alias cat="bat"
+alias grep="rg"
+alias space="du -sh $1"
 #alias mac="/home/ren/workspace/macOS-Simple-KVM/basic.sh"
 #alias f="hunter $1"
 
 alias count="ls -1 | wc -l"
+alias transcode='for i in *.mp4; do ffmpeg -i $i -vcodec dnxhd -acodec pcm_s16le -s 1920x1080 -r 30000/1001 -b:v 36M -pix_fmt yuv422p -f mov out_$i.mov; done'
