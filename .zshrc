@@ -8,7 +8,7 @@ export PATH="$PATH:$HOME/.cargo/bin"
 
 source /etc/profile.d/vte.sh
 
-export ZSH="/home/ren/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 . ~/programs/z.sh
 
@@ -43,22 +43,20 @@ alias intel="system76-power graphics intel"
 
 alias music="cmus"
 alias open="xdg-open $1"
-alias fan="sudo /home/ren/workspace/dell-bios-fan-control/dell.sh"
+alias fan="sudo $HOME/workspace/dell-bios-fan-control/dell.sh"
 alias quiet="sudo i8kfan 0 0"
 alias mid="sudo i8kfan 1 1"
 alias high="sudo i8kfan 2 2"
 
-alias stream_chat="firefox https://dashboard.twitch.tv/popout/u/rengaret/stream-manager/chat"
-alias stream_manager="firefox https://dashboard.twitch.tv/u/rengaret/stream-manager"
-alias fan_bios="sudo /home/ren/workspace/dell-bios-fan-control/dell-bios-fan-control 0"
+alias stream_chat="firefox https://dashboard.twitch.tv/popout/u/$HOMEgaret/stream-manager/chat"
+alias stream_manager="firefox https://dashboard.twitch.tv/u/$HOMEgaret/stream-manager"
+alias fan_bios="sudo $HOME/workspace/dell-bios-fan-control/dell-bios-fan-control 0"
 
 alias ls="exa $1"
 alias ps="procs"
-alias cat="bat"
+alias catt="bat"
 alias grep="rg"
 alias space="du -sh $1"
-#alias mac="/home/ren/workspace/macOS-Simple-KVM/basic.sh"
-#alias f="hunter $1"
 
 alias count="ls -1 | wc -l"
 alias transcode='for i in *.mp4; do ffmpeg -i $i -vcodec dnxhd -acodec pcm_s16le -s 1920x1080 -r 30000/1001 -b:v 36M -pix_fmt yuv422p -f mov out_$i.mov; done'
