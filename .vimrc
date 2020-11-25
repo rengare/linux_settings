@@ -1,6 +1,8 @@
 filetype plugin indent on
 syntax on
 
+set clipboard+=unnamedplus
+
 set runtimepath+=~/.vim
 set runtimepath+=~/.vim/bundle/ctrlp.vim
 set tabstop=2
