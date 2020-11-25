@@ -1,0 +1,20 @@
+{
+"rust-analyzer.checkOnSave.enable":true,
+  "rust-analyzer.inlayHints.chainingHints": true,
+    "rust-analyzer.inlayHints.typeHints": true,
+		    "rust-analyzer.diagnostics.enable": true,
+    "rust-analyzer.inlayHints.chainingHints": true,
+    "rust-analyzer.inlayHints.typeHints": true,
+    "rust-analyzer.inlayHints.parameterHints": true,
+  "suggest.noselect": false,
+  "suggest.enablePreview": true,
+  "suggest.removeDuplicateItems": true,
+  "codeLens.enable": true,
+	 "coc.preferences.jumpCommand": "drop",
+  "coc.preferences.rootPatterns": [".git", ".vscode"],
+  "coc.preferences.formatOnSaveFiletypes": ["python", "javascript", "javascriptreact", "typescriptreact", "css", "rust", "json"],
+"rust-analyzer.serverPath":"/home/ren/.cargo/bin/rust-analyzer",
+  "coc.preferences.useQuickfixForLocations": true,
+  "coc.preferences.snippets.enable": true,
+  "coc.preferences.extensionUpdateCheck": "never"
+}

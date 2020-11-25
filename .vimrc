@@ -66,7 +66,8 @@ nnoremap <silent> <C-s> :w<CR>
 nnoremap <silent> <A-n> :tabnew<CR>
 nnoremap <silent> <A-q> :q<CR>
 nnoremap <silent> <A-e> :Texplore<CR>
-
+nmap <C-_> gcc
+vmap <C-_> gcc
 hi CocFloating guibg=Normal guifg=#83a598
 autocmd StdinReadPre * let s:std_in=1
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
