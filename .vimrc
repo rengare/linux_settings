@@ -18,6 +18,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'rust-lang/rust.vim'
   Plug 'neoclide/coc.nvim'
 	Plug 'tpope/vim-commentary'
+	Plug 'honza/vim-snippets'
 call plug#end()
  
 let g:coc_force_debug = 1
