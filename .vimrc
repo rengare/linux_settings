@@ -14,6 +14,11 @@ set autoread
 set encoding=UTF-8
 au CursorHold * checktime  
 
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=1000}
+augroup END
+
 call plug#begin('~/.vim/plugged')
   Plug 'rust-lang/rust.vim'
   Plug 'neoclide/coc.nvim'
