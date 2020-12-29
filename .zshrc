@@ -57,6 +57,10 @@ alias ps="procs"
 alias catt="bat"
 alias grep="rg"
 alias space="du -sh $1"
+alias tao="bluetoothctl connect 00:80:79:59:4A:E4"
+alias taotao="bluetoothctl disconnect 00:80:79:59:4A:E4"
+alias jab="bluetoothctl connect 50:1A:A5:36:87:00"
+alias jabjab="bluetoothctl disconnect 50:1A:A5:36:87:00"
 
 alias count="ls -1 | wc -l"
 alias transcode='for i in *.mp4; do ffmpeg -i $i -vcodec dnxhd -acodec pcm_s16le -s 1920x1080 -r 30000/1001 -b:v 36M -pix_fmt yuv422p -f mov out_$i.mov; done'
