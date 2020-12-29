@@ -1,0 +1,14 @@
+[Unit]
+Description=startup
+After=network.target       
+[Service]                  
+WorkingDirectory=/home/ren
+ExecStart=/home/ren/.startup
+KillMode=process             
+StandardOutput=syslog                 
+StandardError=syslog                
+SyslogIdentifier=startup_process    
+Restart=on-failure                  
+RestartSec=10                       
+[Install]                           
+WantedBy=multi-user.target          
