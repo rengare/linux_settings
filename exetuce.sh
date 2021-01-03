@@ -1,4 +1,4 @@
-sudo apt install tilix tlp chrome-gnome-shell lm-sensors git gnome-tweak-tool zsh neovim goldendict -y
+sudo apt install tilix tlp chrome-gnome-shell lm-sensors git gnome-tweak-tool zsh neovim goldendict translate-shell fd-find bat ripgrep exa -y
 sudo apt update && sudo apt upgrade -y
 
 mkdir ~/workspace
@@ -9,19 +9,14 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 cp -rf * ~/
 
-wget https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_20.04/amd64/albert_0.16.1_amd64.deb
+wget https://github.com/Ulauncher/Ulauncher/releases/download/5.9.0/ulauncher_5.9.0_all.deb
 
-sudo dpkg -i albert_* 
-
-sudo apt --fix-broken install 
-
-sudo dpkg -i albert_* 
+sudo apt install ./ulauncher_5.9.0_all.deb
 
 gsettings set org.gnome.desktop.wm.preferences button-layout close,minimize,maximize:appmenu
 
 gsettings set org.gnome.desktop.interface clock-format '24h'
 
 #curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-#~/.cargo/bin/cargo install procs bat ripgrep hunter exa
 
 bash -c  "$(wget -qO- https://git.io/vQgMr)"

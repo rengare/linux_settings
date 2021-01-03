@@ -1,0 +1,11 @@
+[
+    {
+        "name": "No scripts",
+        "description": "Select to edit scripts",
+        "icon": null,
+        "script": "xdg-open ~/.config/ulauncher/scripts.json",
+        "default_arguments": [
+
+        ]
+    }
+]
