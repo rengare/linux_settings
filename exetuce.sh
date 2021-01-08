@@ -10,8 +10,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 cp -rf * ~/
 
 wget https://github.com/Ulauncher/Ulauncher/releases/download/5.9.0/ulauncher_5.9.0_all.deb
-
+wget https://launchpad.net/~peppermintos/+archive/ubuntu/ice-dev/+files/ice_6.0.7_all.deb
 sudo apt install ./ulauncher_5.9.0_all.deb
+sudo apt install ./ice_6.0.7_all.deb
 
 gsettings set org.gnome.desktop.wm.preferences button-layout close,minimize,maximize:appmenu
 

@@ -1,6 +1,6 @@
-[
+[     
     {
-        "name": "No scripts",
+        "name": "Config",
         "description": "Select to edit scripts",
         "icon": null,
         "script": "xdg-open ~/.config/ulauncher/scripts.json",

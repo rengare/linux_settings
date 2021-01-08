@@ -76,26 +76,12 @@
         "last_commit": "0cb7711bc1dc89a76bcb89d29082e18deac28227",
         "last_commit_time": "2019-07-19T06:31:41"
     },
-    "com.github.iboyperson.ulauncher-system": {
-        "id": "com.github.iboyperson.ulauncher-system",
-        "url": "https://github.com/iboyperson/ulauncher-system",
-        "updated_at": "2021-01-03T14:25:54.135070",
-        "last_commit": "9268d22afd93748821164e12f806b049533fc873",
-        "last_commit_time": "2020-12-08T21:03:45"
-    },
     "com.github.brpaz.ulauncher-file-search": {
         "id": "com.github.brpaz.ulauncher-file-search",
         "url": "https://github.com/brpaz/ulauncher-file-search",
         "updated_at": "2021-01-03T14:27:35.184296",
         "last_commit": "0ea61c2049b27f1ddfa81d1844876f21dd9d6e7b",
         "last_commit_time": "2020-07-03T13:30:16"
-    },
-    "com.github.dalanicolai.gnome-tracker-extension": {
-        "id": "com.github.dalanicolai.gnome-tracker-extension",
-        "url": "https://github.com/dalanicolai/gnome-tracker-extension",
-        "updated_at": "2021-01-03T14:28:51.949278",
-        "last_commit": "a45f42a50d12a617c2b58067d5d4b97ed6155192",
-        "last_commit_time": "2020-08-31T10:06:27"
     },
     "com.github.fisadev.ulauncher-better-file-browser": {
         "id": "com.github.fisadev.ulauncher-better-file-browser",
@@ -131,5 +117,19 @@
         "updated_at": "2021-01-03T14:49:04.678048",
         "last_commit": "cb9dccda390d2c4d1299148491c65c177066ad14",
         "last_commit_time": "2020-01-19T13:42:10"
+    },
+    "com.github.leinardi.ulauncher-exit-gnome": {
+        "id": "com.github.leinardi.ulauncher-exit-gnome",
+        "url": "https://github.com/leinardi/ulauncher-exit-gnome",
+        "updated_at": "2021-01-04T08:08:29.187433",
+        "last_commit": "804710414d28128bbc9c8fada8fa9a7fbb572479",
+        "last_commit_time": "2020-02-02T09:03:27"
+    },
+    "com.github.luispabon.ulauncher-virtualbox": {
+        "id": "com.github.luispabon.ulauncher-virtualbox",
+        "url": "https://github.com/luispabon/ulauncher-virtualbox",
+        "updated_at": "2021-01-04T16:06:30.643688",
+        "last_commit": "d8f495df3c7f41ee8493b207d17f06fc0372c84e",
+        "last_commit_time": "2020-09-23T01:29:15"
     }
 }
