@@ -1,0 +1,6 @@
+
+[Desktop Entry]
+Type=Application
+Name=restart
+Exec=shutdown 0 -r
+Categories=Applications

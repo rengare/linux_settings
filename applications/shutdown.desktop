@@ -1,0 +1,6 @@
+
+[Desktop Entry]
+Type=Application
+Name=shutdown
+Exec=shutdown 0
+Categories=Applications

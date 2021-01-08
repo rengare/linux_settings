@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=tao
+Exec=bluetoothctl connect 00:80:79:59:4A:E4
+Categories=Applications

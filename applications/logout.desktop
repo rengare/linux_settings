@@ -1,0 +1,6 @@
+
+[Desktop Entry]
+Type=Application
+Name=logout
+Exec=gnome-session-quit
+Categories=Applications
