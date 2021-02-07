@@ -1,8 +1,7 @@
 filetype plugin indent on
 syntax on
 
-set clipboard+=unnamedplus
-
+set clipboard=unnamedplus
 set runtimepath+=~/.vim
 set runtimepath+=~/.vim/bundle/ctrlp.vim
 set tabstop=2
@@ -14,16 +13,10 @@ set autoread
 set encoding=UTF-8
 au CursorHold * checktime  
 
-augroup highlight_yank
-    autocmd!
-    au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=1000}
-augroup END
-
 call plug#begin('~/.vim/plugged')
   Plug 'rust-lang/rust.vim'
   Plug 'neoclide/coc.nvim'
 	Plug 'tpope/vim-commentary'
-	Plug 'honza/vim-snippets'
 call plug#end()
  
 let g:coc_force_debug = 1
@@ -62,6 +55,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> J :call CocAction('showSignatureHelp')<CR>
+
+vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR> 
 
 nnoremap <C-D> <C-S-D>
 nnoremap <C-J> <C-W><C-J>
