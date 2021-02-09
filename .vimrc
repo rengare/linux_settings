@@ -22,6 +22,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'itchyny/lightline.vim'
 	Plug 'airblade/vim-gitgutter'
 	Plug 'mattn/emmet-vim'
+	Plug 'ctrlpvim/ctrlp.vim'
 
 	" post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', {
@@ -29,10 +30,10 @@ Plug 'prettier/vim-prettier', {
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 call plug#end()
-let g:prettier#exec_cmd_path = "/home/ren/.nvm/versions/node/v14.15.3/lib/node_modules/prettier/bin-prettier.js"
+let g:prettier#exec_cmd_path = "/Users/gracjan.gorecki/.nvm/versions/node/v12.13.0/lib/node_modules/prettier/bin-prettier.js"
 
 let g:coc_force_debug = 1
-let g:ctrlp_map = '<c-p>'
+let g:ctrlp_map = '<c-a-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:rustfmt_autosave = 1
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules
