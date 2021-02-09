@@ -14,13 +14,23 @@ set encoding=UTF-8
 au CursorHold * checktime  
 
 call plug#begin('~/.vim/plugged')
-  Plug 'ctrlpvim/ctrlp.vim'
   Plug 'rust-lang/rust.vim'
   Plug 'neoclide/coc.nvim'
-  Plug 'tpope/vim-commentary'
-  Plug 'honza/vim-snippets'
+	Plug 'tpope/vim-commentary'
+	Plug 'jiangmiao/auto-pairs'
+	Plug 'frazrepo/vim-rainbow'
+	Plug 'itchyny/lightline.vim'
+	Plug 'airblade/vim-gitgutter'
+	Plug 'mattn/emmet-vim'
+
+	" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+
 call plug#end()
- 
+let g:prettier#exec_cmd_path = "/home/ren/.nvm/versions/node/v14.15.3/lib/node_modules/prettier/bin-prettier.js"
+
 let g:coc_force_debug = 1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -68,11 +78,13 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <silent> <A-l> :tabn<CR>
 nnoremap <silent> <A-h> :tabp<CR>
 nnoremap <silent> <C-s> :w<CR>
-nnoremap <silent> <A-n> :tabnew<CR>
+nnoremap <silent> <C-n> :tabnew<CR>
 nnoremap <silent> <A-q> :q<CR>
 nnoremap <silent> <A-e> :Texplore<CR>
 nmap <C-_> gcc
 vmap <C-_> gcc
+map <A-f> :call JsBeautify()<cr>
+
 hi CocFloating guibg=Normal guifg=#83a598
 autocmd StdinReadPre * let s:std_in=1
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
