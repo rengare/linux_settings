@@ -84,7 +84,7 @@ nnoremap <silent> <A-q> :q<CR>
 nnoremap <silent> <A-e> :Texplore<CR>
 nmap <C-_> gcc
 vmap <C-_> gcc
-map <A-f> :call JsBeautify()<cr>
+map <A-f> :Prettier<cr>
 
 hi CocFloating guibg=Normal guifg=#83a598
 autocmd StdinReadPre * let s:std_in=1
