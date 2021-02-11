@@ -45,3 +45,33 @@
 
 ## gdm3 touchpad tap
 https://unix.stackexchange.com/questions/266586/gdm-how-to-enable-touchpad-tap-to-click#266590
+
+# Pipewire
+
+## pipewire compilation
+Compile pipewire as describe 
+https://pipewire.org/#getting
+
+## turn off pulse audio
+For some reason stoping daemon didn't stops pulse audio so I had to move service and socket file
+
+* pulseaudio --kill
+* sudo mv /usr/lib/systemd/user/pulseaudio.service ~/backup/pulseaudio.service
+* sudo mv /usr/lib/systemd/user/pulseaudio.socket ~/backup/pulseaudio.socket
+
+## turning on pipewire
+* systemctl --user enable --now  pipewire 
+* again running pipewire-pulse daemon didn't work so I created a bash file
+
+```
+#!/bin/bash
+/usr/bin/pipewire-pulse
+```
+* chmod +x .startup_script
+
+* run the script on startup using gnome startup applications or create .desktop file and link to ~/.config/autostart/
+
+* logout, login
+
+* confirm that pipewire pulse is running 
+`pactl info` should shows `Server Name: PulseAudio (on PipeWire 0.3.21)` 
