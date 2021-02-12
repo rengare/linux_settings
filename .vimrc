@@ -4,7 +4,6 @@ syntax on
 set clipboard+=unnamedplus
 
 set runtimepath+=~/.vim
-set runtimepath+=~/.vim/bundle/ctrlp.vim
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -24,11 +23,11 @@ call plug#begin('~/.vim/plugged')
   Plug 'neoclide/coc.nvim'
 	Plug 'tpope/vim-commentary'
 	Plug 'honza/vim-snippets'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
 call plug#end()
  
 let g:coc_force_debug = 1
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 let g:rustfmt_autosave = 1
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules
 function! s:show_documentation()
@@ -62,6 +61,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> J :call CocAction('showSignatureHelp')<CR>
+nmap <c-p> :GFiles<CR>
 
 nnoremap <C-D> <C-S-D>
 nnoremap <C-J> <C-W><C-J>
