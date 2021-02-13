@@ -9,7 +9,8 @@
 * xdotool key --clearmodifiers XF86AudioNext
 * xdotool key --clearmodifiers XF86AudioPrev
 ## swipe gestures using xdotool
-* https://github.com/rengare/comfortable-swipe
+* https://github.com/JoseExposito/touchegg/releases/tag/2.0.7
+* flatpak touchee
 ## noise cancelation
 * https://wiki.archlinux.org/index.php/PulseAudio/Troubleshooting#Enable_Echo/Noise-Cancellation
 ## fan control
