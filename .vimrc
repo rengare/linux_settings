@@ -1,7 +1,8 @@
 filetype plugin indent on
 syntax on
 
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
+
 set runtimepath+=~/.vim
 set tabstop=2
 set softtabstop=2
@@ -12,6 +13,11 @@ set autoread
 set encoding=UTF-8
 au CursorHold * checktime  
 
+augroup highlight_yank
+    autocmd!
+    au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=1000}
+augroup END
+
 call plug#begin('~/.vim/plugged')
   Plug 'rust-lang/rust.vim'
   Plug 'neoclide/coc.nvim'
@@ -20,19 +26,10 @@ call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
 	Plug 'jiangmiao/auto-pairs'
-	Plug 'frazrepo/vim-rainbow'
-	Plug 'itchyny/lightline.vim'
-	Plug 'airblade/vim-gitgutter'
-	Plug 'mattn/emmet-vim'
-
-	" post install (yarn install | npm install) then load plugin only for editing supported files
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-
+  Plug 'itchyny/lightline.vim'
+	Plug 'tpope/vim-fugitive'
 call plug#end()
-let g:prettier#exec_cmd_path = "/home/ren/.nvm/versions/node/v14.15.3/lib/node_modules/prettier/bin-prettier.js"
-
+ 
 let g:coc_force_debug = 1
 let g:rustfmt_autosave = 1
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules
@@ -67,9 +64,10 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> J :call CocAction('showSignatureHelp')<CR>
-nmap <c-p> :GFiles<CR>
+nmap <c-p> :Files<CR>
+nmap <c-a-p> :GFiles<CR>
+nnoremap <C-g> :Rg<Cr>
 
-vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR> 
 
 nnoremap <C-D> <C-S-D>
 nnoremap <C-J> <C-W><C-J>
@@ -79,17 +77,11 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <silent> <A-l> :tabn<CR>
 nnoremap <silent> <A-h> :tabp<CR>
 nnoremap <silent> <C-s> :w<CR>
-nnoremap <silent> <C-n> :tabnew<CR>
+nnoremap <silent> <c-a-n> :tabnew<CR>
 nnoremap <silent> <A-q> :q<CR>
 nnoremap <silent> <A-e> :Texplore<CR>
-
-nnoremap <C-p> :GFiles<Cr>
-
 nmap <C-_> gcc
 vmap <C-_> gcc
-map <A-f> :Prettier<cr>
-
-
 hi CocFloating guibg=Normal guifg=#83a598
 autocmd StdinReadPre * let s:std_in=1
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

@@ -50,6 +50,7 @@ https://unix.stackexchange.com/questions/266586/gdm-how-to-enable-touchpad-tap-t
 # Pipewire
 
 ## pipewire compilation
+* `sudo apt build-dep pipewire`
 Compile pipewire as describe 
 https://pipewire.org/#getting
 
