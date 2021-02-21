@@ -15,6 +15,7 @@ alias mid="sudo i8kfan 1 1"
 alias high="sudo i8kfan 2 2"
 
 alias ls="exa $1"
+alias l="exa -l $1"
 alias fd="fdfind"
 alias ps="procs"
 alias cat="batcat"
@@ -25,4 +26,4 @@ alias tao="bluetoothctl connect 00:80:79:59:4A:E4"
 alias taotao="bluetoothctl disconnect 00:80:79:59:4A:E4"
 alias jab="bluetoothctl connect 50:1A:A5:36:87:00"
 alias jabjab="bluetoothctl disconnect 50:1A:A5:36:87:00"
-alias disk_space="ls -1 | wc -l"
+
