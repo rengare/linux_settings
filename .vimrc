@@ -11,6 +11,8 @@ set mouse=a
 set number
 set autoread
 set encoding=UTF-8
+set spelllang=en_us,pl
+set spell
 au CursorHold * checktime  
 
 augroup highlight_yank
