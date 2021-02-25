@@ -11,8 +11,8 @@ set mouse=a
 set number
 set autoread
 set encoding=UTF-8
-set spelllang=en_us,pl
-set spell
+" set spelllang=en_us,pl
+" set spell
 au CursorHold * checktime  
 
 augroup highlight_yank
@@ -30,6 +30,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'jiangmiao/auto-pairs'
   Plug 'itchyny/lightline.vim'
 	Plug 'tpope/vim-fugitive'
+	Plug 'mattn/emmet-vim'
 call plug#end()
  
 let g:coc_force_debug = 1
