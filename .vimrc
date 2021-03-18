@@ -31,6 +31,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'itchyny/lightline.vim'
 	Plug 'tpope/vim-fugitive'
 	Plug 'mattn/emmet-vim'
+	Plug 'codota/tabnine-vim'
 call plug#end()
  
 let g:coc_force_debug = 1
