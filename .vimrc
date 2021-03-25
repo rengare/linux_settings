@@ -31,9 +31,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'itchyny/lightline.vim'
 	Plug 'tpope/vim-fugitive'
 	Plug 'mattn/emmet-vim'
-	Plug 'codota/tabnine-vim'
 call plug#end()
- 
+
+let g:python3_host_prog = "/usr/bin/python3"
 let g:coc_force_debug = 1
 let g:rustfmt_autosave = 1
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/node_modules
@@ -70,6 +70,9 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> J :call CocAction('showSignatureHelp')<CR>
 nmap <c-p> :Files<CR>
 nmap <c-a-p> :GFiles<CR>
+nmap <leader>do <Plug>(coc-codeaction)
+nmap <leader>rn <Plug>(coc-rename)
+
 nnoremap <C-g> :Rg<Cr>
 
 

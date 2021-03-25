@@ -77,3 +77,5 @@ For some reason stoping daemon didn't stops pulse audio so I had to move service
 
 * confirm that pipewire pulse is running 
 `pactl info` should shows `Server Name: PulseAudio (on PipeWire 0.3.21)` 
+
+## https://github.com/TheAssassin/AppImageLauncher
