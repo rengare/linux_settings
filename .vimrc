@@ -30,6 +30,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'jiangmiao/auto-pairs'
   Plug 'itchyny/lightline.vim'
 	Plug 'tpope/vim-fugitive'
+	Plug 'terryma/vim-multiple-cursors'
 	Plug 'mattn/emmet-vim'
 call plug#end()
 
