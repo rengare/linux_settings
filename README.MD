@@ -79,3 +79,5 @@ For some reason stoping daemon didn't stops pulse audio so I had to move service
 `pactl info` should shows `Server Name: PulseAudio (on PipeWire 0.3.21)` 
 
 ## https://github.com/TheAssassin/AppImageLauncher
+## barrier config
+* run barrier and connect to host `Exec=barrierc -f --no-tray --enable-crypto 192.168.8.100`
