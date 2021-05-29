@@ -2,7 +2,7 @@ filetype plugin indent on
 syntax on
 
 set clipboard+=unnamedplus
-
+set backupcopy=yes
 set runtimepath+=~/.vim
 set tabstop=2
 set softtabstop=2
@@ -32,6 +32,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-fugitive'
 	Plug 'terryma/vim-multiple-cursors'
 	Plug 'mattn/emmet-vim'
+	Plug 'sindrets/diffview.nvim'
 call plug#end()
 
 let g:python3_host_prog = "/usr/bin/python3"

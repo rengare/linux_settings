@@ -1,0 +1,11 @@
+[Unit]
+Description=change wallpaper hourly
+
+[Timer]
+OnBootSec=5min
+OnCalendar=00/1:00
+AccuracySec=5min
+Unit=wallpaper.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,7 @@
+[Unit]
+Description=Hourly wallpaper
+
+[Service]
+User=ren
+Type=wallpaper
+ExecStart=dwall -s lakeside
