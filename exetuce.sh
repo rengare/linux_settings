@@ -12,6 +12,10 @@ cp -rf ./applications ~/.local/share/
 
 sudo apt install ./ulauncher_5.9.0_all.deb
 
+ln -s .tmux.conf ~/
+ln -s .vimrc ~/
+ln -s .config/fish/config.fish ~/.config/fish/config.fish
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 bash -c  "$(wget -qO- https://git.io/vQgMr)"
