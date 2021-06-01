@@ -1,4 +1,4 @@
-export PATH="$PATH:$HOME/.yarn/bin"
+export PATH="/usr/bin:/bin:$PATH:$HOME/.yarn/bin"
 
 alias s="git status"
 alias b="git branch"
@@ -27,4 +27,6 @@ alias jab="bluetoothctl connect 50:1A:A5:36:87:00"
 alias jabjab="bluetoothctl disconnect 50:1A:A5:36:87:00"
 
 set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
+set -gx PATH "$PATH:$VOLTA_HOME/bin"
+
+starship init fish | source
