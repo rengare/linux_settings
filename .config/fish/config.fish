@@ -26,5 +26,5 @@ alias taotao="bluetoothctl disconnect 00:80:79:59:4A:E4"
 alias jab="bluetoothctl connect 50:1A:A5:36:87:00"
 alias jabjab="bluetoothctl disconnect 50:1A:A5:36:87:00"
 
-starship init fish | source
+#starship init fish | source
 fnm env | source

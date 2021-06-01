@@ -16,7 +16,7 @@ ln -s .tmux.conf ~/
 ln -s .vimrc ~/
 ln -s .config/fish/config.fish ~/.config/fish/config.fish
 
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+#sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
