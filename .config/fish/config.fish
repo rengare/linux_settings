@@ -26,7 +26,5 @@ alias taotao="bluetoothctl disconnect 00:80:79:59:4A:E4"
 alias jab="bluetoothctl connect 50:1A:A5:36:87:00"
 alias jabjab="bluetoothctl disconnect 50:1A:A5:36:87:00"
 
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$PATH:$VOLTA_HOME/bin"
-
 starship init fish | source
+fnm env | source
