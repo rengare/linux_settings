@@ -8,6 +8,7 @@ alias push="git push $1"
 alias p="git pull"
 alias g="git log --all --decorate --oneline --graph"
 alias s.="nautilus ."
+alias np="pnpm $1"
 
 alias debug="google-chrome --remote-debugging-port=9222"
 

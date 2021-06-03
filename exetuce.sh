@@ -5,6 +5,7 @@ wget https://github.com/Ulauncher/Ulauncher/releases/download/5.9.0/ulauncher_5.
 
 gsettings set org.gnome.desktop.wm.preferences button-layout close,minimize,maximize:appmenu
 gsettings set org.gnome.desktop.interface clock-format '24h'
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 cp -rf * ~/
 rm -rf ~/applications
@@ -24,3 +25,4 @@ bash -c  "$(wget -qO- https://git.io/vQgMr)"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
