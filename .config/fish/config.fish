@@ -28,4 +28,4 @@ alias jab="bluetoothctl connect 50:1A:A5:36:87:00"
 alias jabjab="bluetoothctl disconnect 50:1A:A5:36:87:00"
 
 #starship init fish | source
-fnm env | source
+#fnm env | source

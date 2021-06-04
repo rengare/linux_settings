@@ -13,9 +13,13 @@ cp -rf ./applications ~/.local/share/
 
 sudo apt install ./ulauncher_5.9.0_all.deb
 
-ln -s .tmux.conf ~/
-ln -s .vimrc ~/
-ln -s .config/fish/config.fish ~/.config/fish/config.fish
+rm ~/.tmux.conf && 
+rm ~/.vimrc && 
+rm ~/.config/fish/config.fish
+
+ln .tmux.conf ~/ &&
+ln .vimrc ~/ && 
+ln .config/fish/config.fish ~/.config/fish/config.fish
 
 #sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
