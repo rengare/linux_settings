@@ -3,4 +3,4 @@ Description=Hourly wallpaper
 
 [Service]
 Type=wallpaper
-ExecStart=dwall -s lakeside
+ExecStart=/home/ren/.wallpaper

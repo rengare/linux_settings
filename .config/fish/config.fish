@@ -1,4 +1,4 @@
-export PATH="/usr/bin:/bin:$PATH:$HOME/.yarn/bin"
+export PATH="/usr/bin:/bin:$PATH:$HOME/.yarn/bin:$HOME/.cargo/bin"
 
 alias s="git status"
 alias b="git branch"
@@ -19,7 +19,7 @@ alias high="sudo i8kfan 2 2"
 
 alias ls="exa $1"
 alias l="exa -l $1"
-alias fd="fdfind"
+#alias fd="fdfind"
 alias space="du -sh $1"
 
 alias tao="bluetoothctl connect 00:80:79:59:4A:E4"
