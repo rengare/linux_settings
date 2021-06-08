@@ -1,7 +1,7 @@
 ## dotfiles
 * https://github.com/rengare/dotfiles
 * restore git clone --separate-git-dir=$HOME/.dotfiles https://github.com/rengare/dotfiles ~
-* echo "dotfiles.git" ~/.gitignore
+* echo "dotfiles.git" >> ~/.gitignore
 ## Dragon fly black to loud
 * https://chrisjean.com/fix-for-usb-audio-is-too-loud-and-mutes-at-low-volume-in-ubuntu/
 * set only ```volume = ignore```
