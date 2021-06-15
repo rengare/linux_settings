@@ -1,9 +1,10 @@
 ## dotfiles
 * https://github.com/rengare/dotfiles
-* restore git clone --separate-git-dir=$HOME/.dotfiles https://github.com/rengare/dotfiles ~
-* echo "dotfiles.git" >> ~/.gitignore
-* dotfiles config --local status.showUntrackedFiles no
-* dotfiles checkout
+* `git clone --bare https://github.com/rengare/dotfiles.git $HOME/.dotfiles.git`
+* `echo "dotfiles.git" >> ~/.gitignore`
+* `alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"`
+* `dotfiles config --local status.showUntrackedFiles no`
+* `dotfiles checkout`
 ## Dragon fly black to loud
 * https://chrisjean.com/fix-for-usb-audio-is-too-loud-and-mutes-at-low-volume-in-ubuntu/
 * set only ```volume = ignore```
