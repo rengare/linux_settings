@@ -12,5 +12,8 @@ omf install sushi
 
 curl -fsSL https://fnm.vercel.app/install | bash
 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+
 bash -c  "$(wget -qO- https://git.io/vQgMr)"
 
