@@ -5,6 +5,8 @@
 * `alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"`
 * `dotfiles config --local status.showUntrackedFiles no`
 * `dotfiles checkout`
+## i3wm
+* i3 i3status-rust i3lock nitrogen rofi blueberry nm-applet volumeicon flameshot numlockx lxappearance
 ## Dragon fly black to loud
 * https://chrisjean.com/fix-for-usb-audio-is-too-loud-and-mutes-at-low-volume-in-ubuntu/
 * set only ```volume = ignore```
